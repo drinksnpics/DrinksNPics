@@ -26,6 +26,42 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'mytickets',
+        children: [
+          {
+            path: '',
+            loadChildren: '../mytickets/mytickets.module#MyticketsPageModule'
+          }
+        ]
+      },
+      {
+        path: 'profile',
+        children: [
+          {
+            path: '',
+            loadChildren: '../profile/profile.module#ProfilePageModule'
+          }
+        ]
+      },
+      {
+        path: 'food',
+        children: [
+          {
+            path: '',
+            loadChildren: '../food/food.module#FoodPageModule'
+          }
+        ]
+      },
+      {
+        path: 'promos',
+        children: [
+          {
+            path: '',
+            loadChildren: '../promos/promos.module#PromosPageModule'
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

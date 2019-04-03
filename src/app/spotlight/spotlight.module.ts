@@ -7,6 +7,9 @@ import { IonicModule } from '@ionic/angular';
 
 import { SpotlightPage } from './spotlight.page';
 
+import { MoviecardautoComponent} from '../components/moviecardauto/moviecardauto.component';
+import {ComponentsModule} from '../components/components.module';
+
 const routes: Routes = [
   {
     path: '',
@@ -19,7 +22,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ComponentsModule
   ],
   declarations: [SpotlightPage]
 })
