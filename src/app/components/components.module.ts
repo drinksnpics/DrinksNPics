@@ -4,6 +4,7 @@ import {TicketComponent} from './ticket/ticket.component';
 import {IonicModule} from '@ionic/angular';
 import {ShowtimesComponent} from './showtimes/showtimes.component';
 import {MovieShowtimeComponent} from './showtimes/movie-showtime/movie-showtime.component';
+import {ProfileCardComponent} from './profile-card/profile-card.component';
 
 @NgModule({
     declarations: [
@@ -11,6 +12,7 @@ import {MovieShowtimeComponent} from './showtimes/movie-showtime/movie-showtime.
         TicketComponent,
         ShowtimesComponent,
         MovieShowtimeComponent,
+        ProfileCardComponent,
     ],
     imports: [
         IonicModule
@@ -20,6 +22,7 @@ import {MovieShowtimeComponent} from './showtimes/movie-showtime/movie-showtime.
         TicketComponent,
         ShowtimesComponent,
         MovieShowtimeComponent,
+        ProfileCardComponent,
     ]
 })
 export class ComponentsModule {}
