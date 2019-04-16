@@ -5,6 +5,8 @@ import {IonicModule} from '@ionic/angular';
 import {ShowtimesComponent} from './showtimes/showtimes.component';
 import {MovieShowtimeComponent} from './showtimes/movie-showtime/movie-showtime.component';
 import {ProfileCardComponent} from './profile-card/profile-card.component';
+import {CelebrityRecognizerComponent} from './celebrity-recognizer/celebrity-recognizer.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -13,9 +15,11 @@ import {ProfileCardComponent} from './profile-card/profile-card.component';
         ShowtimesComponent,
         MovieShowtimeComponent,
         ProfileCardComponent,
+        CelebrityRecognizerComponent
     ],
     imports: [
-        IonicModule
+        IonicModule,
+        HttpClientModule
     ],
     exports: [
         MoviecardautoComponent,
@@ -23,6 +27,7 @@ import {ProfileCardComponent} from './profile-card/profile-card.component';
         ShowtimesComponent,
         MovieShowtimeComponent,
         ProfileCardComponent,
+        CelebrityRecognizerComponent
     ]
 })
 export class ComponentsModule {}

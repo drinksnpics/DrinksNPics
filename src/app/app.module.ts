@@ -11,13 +11,26 @@ import { AppComponent } from './app.component';
 
 // Components
 import {ComponentsModule} from './components/components.module';
+import {HomePageModule} from './pages/home/home.module';
+import {MovieDetailPageModule} from './pages/movie-detail/movie-detail.module';
+import {PersonDetailPageModule} from './pages/person-detail/person-detail.module';
+import {SearchPageModule} from './pages/search/search.module';
 
 @NgModule({
   declarations: [ AppComponent,
 
                 ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, ComponentsModule],
+  imports: [
+      BrowserModule,
+      IonicModule.forRoot(),
+      AppRoutingModule,
+      ComponentsModule
+      // HomePageModule,
+      // MovieDetailPageModule,
+      // PersonDetailPageModule,
+      // SearchPageModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
